@@ -12,14 +12,11 @@ services:
         - ./conf/nginx/conf.d:/etc/nginx/conf.d/:ro
         - ./conf/nginx/cert/:/etc/nginx/cert/:rw
         - ./log/nginx/:/var/log/nginx/:rw
-      networks:
-        - frontend
-        - backend
       links:
           - php-fpm1:fpm1
           - php-fpm2:fpm2
     php-fpm1:
-        image: "${DOCKER_USER}/php-fpm1:v1"
+        image: "${DOCKER_USER}/php-fpm:v1"
         build:
             context: .
             dockerfile: Dockerfile.php
@@ -31,11 +28,10 @@ services:
             - ./conf/php/php.ini:/usr/local/etc/php/php.ini:ro
             - ./conf/php/php-fpm.d/site.conf:/usr/local/etc/php-fpm.d/site.conf:rw
             - ./log/php-fpm/:/var/log/php-fpm/:rw
-        networks:
-            - frontend
-            - backend
+        links:
+            - mysql:mysql
     php-fpm2:
-        image: "${DOCKER_USER}/php-fpm2:v1"
+        image: "${DOCKER_USER}/php-fpm:v1"
         build:
             context: .
             dockerfile: Dockerfile.php
@@ -48,12 +44,16 @@ services:
             - ./conf/php/php.ini:/usr/local/etc/php/php.ini:ro
             - ./conf/php/php-fpm.d/site.conf:/usr/local/etc/php-fpm.d/site.conf:rw
             - ./log/php-fpm/:/var/log/php-fpm/:rw
-        networks:
-            - frontend
-            - backend
-volumes:
-    mysql-data:
-
-networks:
-    frontend:
-    backend:
+        links:
+            - mysql:mysql
+    mysql:
+        image: mysql:latest
+        ports:
+          - "3306:3306"
+        restart: unless-stopped
+        volumes:
+          - ./conf/mysql/mysql.cnf:/etc/mysql/conf.d/mysql.cnf:ro
+          - ./mysql/:/var/lib/mysql/:rw
+          - ./log/mysql/:/var/log/mysql/:rw
+        environment:
+          MYSQL_ROOT_PASSWORD: "muyi123"
