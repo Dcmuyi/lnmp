@@ -3,6 +3,8 @@ FROM php:7-fpm
 ENV TZ=Asia/Shanghai
 
 COPY sources.list /etc/apt/sources.list
+#pdo_dblib需要文件，freetds需要
+COPY ./conf/libsybdb.a /usr/lib/
 
 RUN set -xe \
     && echo "构建依赖" \
@@ -18,6 +20,9 @@ RUN set -xe \
     && runtimeDeps=" \
         libfreetype6 \
         libjpeg62-turbo \
+        freetds-bin \
+        freetds-dev \
+        freetds-common \
         libmcrypt4 \
         libpng12-0 \
     " \
@@ -26,7 +31,7 @@ RUN set -xe \
     && apt-get update \
     && apt-get install -y ${runtimeDeps} ${buildDeps} --no-install-recommends \
     && echo "编译安装 php 组件" \
-    && docker-php-ext-install iconv mcrypt mysqli pdo pdo_mysql zip \
+    && docker-php-ext-install iconv mcrypt mysqli pdo pdo_mysql pdo_dblib zip \
     && docker-php-ext-configure gd \
         --with-freetype-dir=/usr/include/ \
         --with-jpeg-dir=/usr/include/ \
@@ -41,3 +46,4 @@ RUN set -xe \
 
 COPY ./conf/php/php.ini /usr/local/etc/php/php.ini
 COPY ./conf/php/php-fpm.d/site.conf /usr/local/etc/php-fpm.d/site.conf
+COPY ./conf/freetds/freetds.conf /etc/freetds/freetds.conf
