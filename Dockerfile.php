@@ -4,7 +4,7 @@ ENV TZ=Asia/Shanghai
 
 COPY sources.list /etc/apt/sources.list
 #pdo_dblib需要文件，freetds需要
-COPY ./conf/libsybdb.a /usr/lib/
+COPY ./conf/freetds/libsybdb.a /usr/lib/
 
 RUN set -xe \
     && echo "构建依赖" \
