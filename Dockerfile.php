@@ -31,7 +31,7 @@ RUN set -xe \
     && apt-get update \
     && apt-get install -y ${runtimeDeps} ${buildDeps} --no-install-recommends \
     && echo "编译安装 php 组件" \
-    && docker-php-ext-install iconv mcrypt mysqli pdo pdo_mysql pdo_dblib zip \
+    && docker-php-ext-install iconv mcrypt mysqli pdo pdo_mysql pdo_dblib zip bcmath mbstring \
     && docker-php-ext-configure gd \
         --with-freetype-dir=/usr/include/ \
         --with-jpeg-dir=/usr/include/ \
