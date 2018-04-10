@@ -13,32 +13,15 @@ services:
         - ./conf/nginx/cert/:/etc/nginx/cert/:rw
         - ./log/nginx/:/var/log/nginx/:rw
       links:
-          - php-fpm1:fpm1
-          - php-fpm2:fpm2
-    php-fpm1:
+          - php-fpm:php-fpm
+    php-fpm:
         image: "${DOCKER_USER}/php-fpm:v1"
         build:
             context: .
-            dockerfile: Dockerfile.php
+            dockerfile: Dockerfile
         expose:
             - "9000"
         restart: unless-stopped
-        volumes:
-            - ./code/:/var/www/html/:rw
-            - ./conf/php/php.ini:/usr/local/etc/php/php.ini:ro
-            - ./conf/php/php-fpm.d/site.conf:/usr/local/etc/php-fpm.d/site.conf:rw
-            - ./log/php-fpm/:/var/log/php-fpm/:rw
-        links:
-            - mysql:mysql
-    php-fpm2:
-        image: "${DOCKER_USER}/php-fpm:v1"
-        build:
-            context: .
-            dockerfile: Dockerfile.php
-        expose:
-            - "9000"
-        restart: unless-stopped
-        tty: true
         volumes:
             - ./code/:/var/www/html/:rw
             - ./conf/php/php.ini:/usr/local/etc/php/php.ini:ro
