@@ -10,7 +10,7 @@ RUN set -xe \
     && apt-get update \
     && apt-get install -y build-essential libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev libmcrypt4 --no-install-recommends \
     && echo "编译安装 php 组件" \
-    && docker-php-ext-install iconv mysqli pdo_mysql zip bcmath mbstring \
+    && docker-php-ext-install iconv mcrypt mysqli pdo_mysql zip bcmath mbstring \
     && docker-php-ext-configure gd \
         --with-freetype-dir=/usr/include/ \
         --with-jpeg-dir=/usr/include/ \
