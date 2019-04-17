@@ -23,6 +23,6 @@ services:
         restart: always
         volumes:
             - /www/php:/var/www/html/:rw
-            - ./conf/php/php.ini:/usr/local/etc/php/php.ini:ro
+            - ./conf/php/php.ini:/usr/local/etc/php/php.ini:rw
             - ./conf/php/php-fpm.d/site.conf:/usr/local/etc/php-fpm.d/site.conf:rw
             - ./log/php-fpm/:/var/log/php-fpm/:rw

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c894ca3-faca-453a-842e-bdf703e59e88" name="Default" comment="fx">
+      <change afterPath="$PROJECT_DIR$/df2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/df2s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/php/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/conf/php/php.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,35 +45,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+              <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.remarkrc">
+        <entry file="file://$PROJECT_DIR$/conf/php/php.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+            <state relative-caret-position="193">
+              <caret line="919" column="23" selection-start-line="919" selection-start-column="23" selection-end-line="919" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
+        <entry file="file://$PROJECT_DIR$/df2">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="255">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Dockerfile">
+        <entry file="file://$PROJECT_DIR$/df2s">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+            <state relative-caret-position="120">
+              <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -107,6 +120,7 @@
       <find>timeZ</find>
       <find>/extension</find>
       <find>extension</find>
+      <find>extensions</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -134,7 +148,6 @@
         <option value="$PROJECT_DIR$/code/50x.html" />
         <option value="$PROJECT_DIR$/conf/nginx/nginx.conf" />
         <option value="$PROJECT_DIR$/www.conf" />
-        <option value="$PROJECT_DIR$/conf/php/php.ini" />
         <option value="$PROJECT_DIR$/code/index.php" />
         <option value="$PROJECT_DIR$/conf/php/php-fpm.d/site.conf" />
         <option value="$PROJECT_DIR$/code/site2/index.html" />
@@ -144,9 +157,13 @@
         <option value="$PROJECT_DIR$/conf/nginx/cert/base/214206647680425.pem" />
         <option value="$PROJECT_DIR$/conf/nginx/cert/muyi/214206628590425.key" />
         <option value="$PROJECT_DIR$/conf/nginx/cert/muyi/214206628590425.pem" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/conf/nginx/conf.d/default.conf" />
+        <option value="$PROJECT_DIR$/conf/redis.conf" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/conf/php/php.ini" />
         <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/df2" />
+        <option value="$PROJECT_DIR$/df2s" />
       </list>
     </option>
   </component>
@@ -154,8 +171,9 @@
     <option name="NEW_PHP_FILE_LAST_EXTENSION" value="inc" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="12" />
-    <option name="width" value="1936" />
+    <option name="x" value="338" />
+    <option name="y" value="40" />
+    <option name="width" value="1389" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
@@ -170,24 +188,6 @@
               <item name="lnmp" type="b2602c69:ProjectViewProjectNode" />
               <item name="lnmp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lnmp" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lnmp" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-              <item name="nginx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lnmp" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-              <item name="nginx" type="462c0819:PsiDirectoryNode" />
-              <item name="conf.d" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -199,7 +199,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../php/www/service-banting-v4" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -262,7 +262,14 @@
       <workItem from="1532922462539" duration="14000" />
       <workItem from="1534822886905" duration="9084000" />
       <workItem from="1555061282494" duration="363000" />
-      <workItem from="1555061781555" duration="77000" />
+      <workItem from="1555061781555" duration="885000" />
+      <workItem from="1555321813036" duration="1246000" />
+      <workItem from="1555326465904" duration="809000" />
+      <workItem from="1555377284187" duration="7215000" />
+      <workItem from="1555405569987" duration="3018000" />
+      <workItem from="1555463185835" duration="4874000" />
+      <workItem from="1555481771179" duration="331000" />
+      <workItem from="1555498377122" duration="62000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1555057027938</created>
@@ -285,11 +292,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555057187518</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fx">
+      <created>1555062041620</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555062041620</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65340000" />
+    <option name="totallyTimeSpent" value="83703000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -304,7 +318,7 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2498615" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27257618" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -316,10 +330,11 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32893288" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3290653" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -370,13 +385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/php/php-fpm.d/site.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/site2/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -387,13 +395,6 @@
     <entry file="file://$PROJECT_DIR$/conf/nginx/cert/base/214025151580425.pem" />
     <entry file="file://$PROJECT_DIR$/conf/nginx/cert/base/214025151580425.key" />
     <entry file="file://$PROJECT_DIR$/mysql/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/conf/php/php.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14909">
-          <caret line="877" column="23" lean-forward="true" selection-start-line="877" selection-start-column="23" selection-end-line="877" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile.php" />
     <entry file="file://$PROJECT_DIR$/log/mysql/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -413,13 +414,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/nginx/cert/muyi/214206628590425.key" />
     <entry file="file://$PROJECT_DIR$/conf/nginx/cert/muyi/214206628590425.pem" />
-    <entry file="file://$PROJECT_DIR$/conf/nginx/nginx.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.remarkrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -434,10 +428,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources.list">
+    <entry file="file://$PROJECT_DIR$/conf/redis.conf" />
+    <entry file="file://$PROJECT_DIR$/conf/php/php-fpm.d/site.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/nginx/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -450,15 +452,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="240">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+        <state relative-caret-position="255">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources.list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/php/php.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="919" column="23" selection-start-line="919" selection-start-column="23" selection-end-line="919" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/df2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/df2s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
     </entry>
