@@ -1,9 +1,0 @@
-#!/bin/bash
-
-docker run \
-    --name worker \
-    -v /www/php:/var/www/html/ \
-    -p 2018:2018 \
-    -d worker \
-    --restart=always \
-    tail -f
