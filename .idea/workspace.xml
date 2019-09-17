@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c894ca3-faca-453a-842e-bdf703e59e88" name="Default" comment="fx">
+    <list default="true" id="5c894ca3-faca-453a-842e-bdf703e59e88" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/nginx/conf.d/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/nginx/conf.d/default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/php/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/conf/php/php.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/df2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/df2s" beforeDir="false" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,6 +12,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -25,10 +27,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/nginx/nginx.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conf/nginx/conf.d/default.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="930">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
@@ -36,17 +47,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+            <state relative-caret-position="210">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <caret line="20" column="54" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -54,17 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/php/php.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="927" column="25" lean-forward="true" selection-start-line="927" selection-start-column="25" selection-end-line="927" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources.list">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="13590">
+              <caret line="906" column="45" selection-start-line="906" selection-start-column="45" selection-end-line="906" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -93,8 +95,6 @@
       <find>timeZ</find>
       <find>/extension</find>
       <find>extension</find>
-      <find>extensions</find>
-      <find>yaf</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -111,7 +111,6 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/site/index.php" />
         <option value="$PROJECT_DIR$/php.conf" />
-        <option value="$PROJECT_DIR$/sources.list" />
         <option value="$PROJECT_DIR$/Dockerfile.py" />
         <option value="$PROJECT_DIR$/Dockerfile2.php" />
         <option value="$PROJECT_DIR$/code/index.html" />
@@ -122,23 +121,20 @@
         <option value="$PROJECT_DIR$/code/50x.html" />
         <option value="$PROJECT_DIR$/conf/nginx/nginx.conf" />
         <option value="$PROJECT_DIR$/www.conf" />
+        <option value="$PROJECT_DIR$/conf/php/php.ini" />
         <option value="$PROJECT_DIR$/code/index.php" />
         <option value="$PROJECT_DIR$/conf/php/php-fpm.d/site.conf" />
         <option value="$PROJECT_DIR$/code/site2/index.html" />
         <option value="$PROJECT_DIR$/Dockerfile.php" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/conf/mysql/mysql.cnf" />
         <option value="$PROJECT_DIR$/conf/nginx/cert/base/214206647680425.key" />
         <option value="$PROJECT_DIR$/conf/nginx/cert/base/214206647680425.pem" />
         <option value="$PROJECT_DIR$/conf/nginx/cert/muyi/214206628590425.key" />
         <option value="$PROJECT_DIR$/conf/nginx/cert/muyi/214206628590425.pem" />
-        <option value="$PROJECT_DIR$/conf/redis.conf" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/df2" />
-        <option value="$PROJECT_DIR$/df2s" />
-        <option value="$PROJECT_DIR$/Dockermysql" />
-        <option value="$PROJECT_DIR$/conf/nginx/conf.d/default.conf" />
-        <option value="$PROJECT_DIR$/conf/php/php.ini" />
+        <option value="$PROJECT_DIR$/sources.list" />
         <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/conf/nginx/conf.d/default.conf" />
       </list>
     </option>
   </component>
@@ -173,7 +169,14 @@
               <item name="lnmp" type="b2602c69:ProjectViewProjectNode" />
               <item name="lnmp" type="462c0819:PsiDirectoryNode" />
               <item name="conf" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="nginx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lnmp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lnmp" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+              <item name="nginx" type="462c0819:PsiDirectoryNode" />
+              <item name="conf.d" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -188,17 +191,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\wamp\www\lnp\conf\nginx\cert" />
-      <recent name="D:\wamp\www\lnp\conf\nginx" />
-      <recent name="C:\Users\晓\Desktop\lnmp-1\conf\nginx" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="D:\wamp\www\lnmp\conf\nginx\cert\base" />
       <recent name="D:\wamp\www\lnmp\conf" />
       <recent name="D:\wamp\www\lnp" />
       <recent name="D:\wamp\www\lnp\log" />
+      <recent name="D:\wamp\www\lnp\conf" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wamp\www\lnp\conf\nginx\cert" />
+      <recent name="D:\wamp\www\lnp\conf\nginx" />
+      <recent name="C:\Users\晓\Desktop\lnmp-1\conf\nginx" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -247,76 +250,26 @@
       <workItem from="1532676554018" duration="6000" />
       <workItem from="1532922462539" duration="14000" />
       <workItem from="1534822886905" duration="9084000" />
-      <workItem from="1555061282494" duration="363000" />
-      <workItem from="1555061781555" duration="885000" />
-      <workItem from="1555321813036" duration="1246000" />
-      <workItem from="1555326465904" duration="809000" />
-      <workItem from="1555377284187" duration="7215000" />
-      <workItem from="1555405569987" duration="3018000" />
-      <workItem from="1555463185835" duration="4874000" />
-      <workItem from="1555481771179" duration="331000" />
-      <workItem from="1555498377122" duration="143000" />
-      <workItem from="1555998399630" duration="4428000" />
-      <workItem from="1556271809562" duration="290000" />
-      <workItem from="1556414527177" duration="5775000" />
-      <workItem from="1556523515254" duration="1987000" />
-      <workItem from="1556591457073" duration="2075000" />
+      <workItem from="1557018644476" duration="599000" />
+      <workItem from="1557025699175" duration="248000" />
+      <workItem from="1557026460610" duration="4975000" />
+      <workItem from="1557105536769" duration="2884000" />
+      <workItem from="1557197321240" duration="1290000" />
+      <workItem from="1557301300377" duration="676000" />
+      <workItem from="1558495474757" duration="916000" />
+      <workItem from="1558927264598" duration="19000" />
+      <workItem from="1558928410640" duration="37000" />
     </task>
-    <task id="LOCAL-00001" summary="test">
-      <created>1555057027938</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1555057027938</updated>
-    </task>
-    <task id="LOCAL-00002" summary="test">
-      <created>1555057064965</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1555057064965</updated>
-    </task>
-    <task id="LOCAL-00003" summary="fx">
-      <created>1555057187518</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1555057187518</updated>
-    </task>
-    <task id="LOCAL-00004" summary="fx">
-      <created>1555062041620</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1555062041620</updated>
-    </task>
-    <task id="LOCAL-00005" summary="fx">
-      <created>1555498478426</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1555498478426</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98339000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="79209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28919667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3274238" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -325,14 +278,13 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32893288" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32900432" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3290653" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32900432" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -342,11 +294,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="test" />
-    <MESSAGE value="fx" />
-    <option name="LAST_COMMIT_MESSAGE" value="fx" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/log/nginx/.gitignore">
@@ -363,6 +310,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.remarkrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -412,21 +373,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/nginx/cert/muyi/214206628590425.key" />
     <entry file="file://$PROJECT_DIR$/conf/nginx/cert/muyi/214206628590425.pem" />
-    <entry file="file://$PROJECT_DIR$/.remarkrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/redis.conf" />
     <entry file="file://$PROJECT_DIR$/conf/php/php-fpm.d/site.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -434,54 +380,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/df2" />
-    <entry file="file://$PROJECT_DIR$/df2s" />
-    <entry file="file://$PROJECT_DIR$/conf/nginx/nginx.conf">
+    <entry file="file://$PROJECT_DIR$/sources.list">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockermysql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources.list">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/nginx/conf.d/default.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/php/php.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="927" column="25" lean-forward="true" selection-start-line="927" selection-start-column="25" selection-end-line="927" selection-end-column="25" />
+        <state relative-caret-position="210">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/php/php.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13590">
+          <caret line="906" column="45" selection-start-line="906" selection-start-column="45" selection-end-line="906" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/nginx/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/nginx/conf.d/default.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>

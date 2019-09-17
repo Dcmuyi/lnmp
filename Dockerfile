@@ -2,7 +2,8 @@ FROM php:7.0-fpm
 
 ENV TZ=Asia/Shanghai
 
-#COPY sources.list /etc/apt/sources.list
+# use chinese mirror for apt-update
+RUN sed -i "s/archive.ubuntu.com/cn.archive.ubuntu.com/g" /etc/apt/sources.list
 
 RUN set -xe \
     && echo "安装 php 以及编译构建组件所需包" \
@@ -14,22 +15,24 @@ RUN set -xe \
     && docker-php-ext-configure gd \
         --with-freetype-dir=/usr/include/ \
         --with-jpeg-dir=/usr/include/ \
-    && docker-php-ext-install gd \
-    && pecl install mongodb igbinary redis yaf Inotify
+    && docker-php-ext-install gd
 
-ARG PHALCON_VERSION=3.4.2
-ARG PHALCON_EXT_PATH=php7/64bits
+RUN set -xe \
+    && pecl install mongodb igbinary redis Inotify yaf
 
 #install phalcon
-RUN set -xe && \
-        # Compile Phalcon
-        curl -LO https://github.com/phalcon/cphalcon/archive/v${PHALCON_VERSION}.tar.gz && \
-        tar xzf ${PWD}/v${PHALCON_VERSION}.tar.gz && \
-        docker-php-ext-install -j $(getconf _NPROCESSORS_ONLN) ${PWD}/cphalcon-${PHALCON_VERSION}/build/${PHALCON_EXT_PATH} && \
-        # Remove all temp files
-        rm -r \
-            ${PWD}/v${PHALCON_VERSION}.tar.gz \
-            ${PWD}/cphalcon-${PHALCON_VERSION}
+#ARG PHALCON_VERSION=3.4.2
+#ARG PHALCON_EXT_PATH=php7/64bits
+#
+#RUN set -xe && \
+#        # Compile Phalcon
+#        curl -LO https://github.com/phalcon/cphalcon/archive/v${PHALCON_VERSION}.tar.gz && \
+#        tar xzf ${PWD}/v${PHALCON_VERSION}.tar.gz && \
+#        docker-php-ext-install -j $(getconf _NPROCESSORS_ONLN) ${PWD}/cphalcon-${PHALCON_VERSION}/build/${PHALCON_EXT_PATH} && \
+#        # Remove all temp files
+#        rm -r \
+#            ${PWD}/v${PHALCON_VERSION}.tar.gz \
+#            ${PWD}/cphalcon-${PHALCON_VERSION}
 
 #COPY docker-phalcon-* /usr/local/bin/
 COPY ./conf/php/php.ini /usr/local/etc/php/php.ini
